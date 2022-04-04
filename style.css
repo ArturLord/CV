@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*внешний подкл шрифт*/
+/* * {
+    padding: 0; обнуление всех отсутпов
+    margin: 0;
+}*/
+
+body {
+  background-color: #1f1f21;
+  font-size: 16px;
+  font-weight: normal; /*жирность шрифта*/
+  font-family: "Roboto", sans-serif; /*внешний шрифт*/
+
+  /* font: normal 16px 'Roboto', sans-serif; идентичная запись выше 3*/
+}
+.contact h2 {
+  color: #39add7;
+  text-align: center;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+
+a:active {
+  color: red; /* работает при зажатии мышки*/
+}
+
+a:visited {
+  color: grey; /* после посещения ссылки будет такой цвет*/
+}
+
+/*для классов -  . 
+ для id - #
+ */
+.avatar {
+  width: 200px;
+  border-radius: 15px; /*если 50%,то карт будет круглой*/
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.75); /* тень картинки*/
+}
+
+.info {
+    display: flex;
+  margin-bottom: 20px;
+
+}
+.hr-shelf {
+  padding: 0;
+	height: 2px;
+	border: none;
+	width: 95%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: hr-shelf 5s ease infinite;
+  background-size: 400% 400%;
+
+}
+ 
+@keyframes hr-shelf {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media (max-width: 850px) {
+    .info {
+        text-align: center;
+        display: block;
+    }
+    
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+    color: #9fa3ab;
+}
+
+@keyframes anime {
+  0% {
+      color: #ee7752;
+  }
+  33% {
+      color: #e73c7e;
+  }
+  66% {
+      color: #23a6d5;
+  }
+  100% {
+      color: #23d5ab;
+  }
+}
+
+
+h1 {
+  animation: anime infinite 4s linear;
+}
+.info p {
+  color: #86898f;
+  margin: 5px;
+  font-style: italic; /*наклонный текст*/
+  font-weight: bold; /* жирный шрифт*/
+  text-decoration: none; /*подчеркнутый текст*/
+  /*text-transform: uppercase; текст в верхнем регистре*/
+  /* letter-spacing: 8px; расстояние между буквами*/
+  /*word-spacing: 30px; расстояние между словами*/
+}
+
+/* box-model */
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+/*.social {
+    background: green;
+    padding: 15px; /*1 внутренние отступы*/
+/*padding: 15px 40px; сверху и снизу по 15px, по бокам 40px*/
+/*padding: 15px 20px 40px 45px; идет по часовой стрелке*/
+/* margin: 10px; /* внешний отступ*/
+/* border: 5px solid red; 2 внут.отступы */
+/* border-bottom-style: dotted;граница точками снизу */
+/* border-top-width: 10px; */
+/* border-right-color: blue; */
+/* } */
+
+/*.box-model > div {
+    background:  black;
+    height: 200px;
+    width: 25%;
+    float: left;
+    border: 4px solid red;/* не выстроится в одну колонку*/
+/* box-sizing: border-box;/* с этим значением выстраивается в колонку
+}*/
+
+.bg-yellow {
+  background: #fff9dc;
+}
+.bg-green {
+  background: #e5ffe7;
+}
+
+.card {
+  padding: 3px 20px;
+  margin-bottom: 20px; /*лучше этот метод использ. а не топ*/
+  border-radius: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.list {
+  padding: 0 20px;
+}
+
+.list li {
+  color: #1d2024;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+  margin: auto;
+}
+
+.table th {
+  text-align: left;
+}
+
+.table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .table td:nth-child(2),/*nth.. для опрд колонок без класса*/
+/* .table td:nth-child(3) {
+  color: green;
+} */ */
+
+/* .table tr:nth-child(odd) {
+    background: red;
+} */
+
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: rgb(180, 180, 180);
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+    margin-left: 0
+}
+
+.btn {
+    background: black;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.btn:hover {
+    color: #23d5ab;
+    opacity: 0.7;
+}
+
+/*Position*/
+
+/* .position {
+    position: relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+}
+
+.box {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    background: lightblue;
+} */
