@@ -1,3 +1,3 @@
 # Моё резюме
 
-[CV](https://arturlord.github.io/CV/)
+[Резюме](https://arturlord.github.io/CV/)
