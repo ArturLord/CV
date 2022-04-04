@@ -2,4 +2,4 @@
 
 ## Ссылка ниже)
 
-[Резюме](https://github.com/ArturLord/CV.git)
+[Резюме](https://github.com)
