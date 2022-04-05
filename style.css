@@ -1,17 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-/*внешний подкл шрифт*/
-/* * {
-    padding: 0; обнуление всех отсутпов
-    margin: 0;
-}*/
 
 body {
   background-color: #1f1f21;
   font-size: 16px;
-  font-weight: normal; /*жирность шрифта*/
-  font-family: "Roboto", sans-serif; /*внешний шрифт*/
-
-  /* font: normal 16px 'Roboto', sans-serif; идентичная запись выше 3*/
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
 }
 .contact h2 {
   color: #39add7;
@@ -28,20 +21,17 @@ a:hover {
 }
 
 a:active {
-  color: red; /* работает при зажатии мышки*/
+  color: red;
 }
 
 a:visited {
-  color: grey; /* после посещения ссылки будет такой цвет*/
+  color: grey;
 }
 
-/*для классов -  . 
- для id - #
- */
 .avatar {
   width: 200px;
-  border-radius: 15px; /*если 50%,то карт будет круглой*/
-  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.75); /* тень картинки*/
+  border-radius: 15px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.75);
 }
 
 .info {
@@ -111,40 +101,16 @@ h1 {
 .info p {
   color: #86898f;
   margin: 5px;
-  font-style: italic; /*наклонный текст*/
-  font-weight: bold; /* жирный шрифт*/
-  text-decoration: none; /*подчеркнутый текст*/
-  /*text-transform: uppercase; текст в верхнем регистре*/
-  /* letter-spacing: 8px; расстояние между буквами*/
-  /*word-spacing: 30px; расстояние между словами*/
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-/* box-model */
 .container {
     max-width: 750px;
     margin: auto;
     padding-top: 30px;
 }
-/*.social {
-    background: green;
-    padding: 15px; /*1 внутренние отступы*/
-/*padding: 15px 40px; сверху и снизу по 15px, по бокам 40px*/
-/*padding: 15px 20px 40px 45px; идет по часовой стрелке*/
-/* margin: 10px; /* внешний отступ*/
-/* border: 5px solid red; 2 внут.отступы */
-/* border-bottom-style: dotted;граница точками снизу */
-/* border-top-width: 10px; */
-/* border-right-color: blue; */
-/* } */
-
-/*.box-model > div {
-    background:  black;
-    height: 200px;
-    width: 25%;
-    float: left;
-    border: 4px solid red;/* не выстроится в одну колонку*/
-/* box-sizing: border-box;/* с этим значением выстраивается в колонку
-}*/
 
 .bg-yellow {
   background: #fff9dc;
@@ -155,7 +121,7 @@ h1 {
 
 .card {
   padding: 3px 20px;
-  margin-bottom: 20px; /*лучше этот метод использ. а не топ*/
+  margin-bottom: 20px;
   border-radius: 20px;
 }
 
@@ -185,16 +151,6 @@ h1 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
-/* .table td:nth-child(2),/*nth.. для опрд колонок без класса*/
-/* .table td:nth-child(3) {
-  color: green;
-} */ */
-
-/* .table tr:nth-child(odd) {
-    background: red;
-} */
-
 
 .form-group label {
     display: block;
@@ -244,22 +200,3 @@ h1 {
     color: #23d5ab;
     opacity: 0.7;
 }
-
-/*Position*/
-
-/* .position {
-    position: relative;
-    border: 4px solid black;
-    margin-top: 40px;
-    padding: 20px;
-    height: 300px;
-}
-
-.box {
-    position: absolute;
-    top: 100px;
-    left: 40px;
-    width: 50px;
-    height: 50px;
-    background: lightblue;
-} */
